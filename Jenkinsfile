@@ -1,5 +1,5 @@
 pipeline {
-  agent { dockerfile true }
+  agent { ros_noetic_Dockerfile true }
   stages {
     stage("build") {
       steps {
