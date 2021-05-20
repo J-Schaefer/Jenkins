@@ -1,7 +1,7 @@
 pipeline {
     agent none
     stage {
-        stage('Clone repository'){
+        step ('Clone repository'){
            checkout scm 
         }
     }
