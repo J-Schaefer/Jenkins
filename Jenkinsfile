@@ -10,7 +10,6 @@ pipeline {
           git credentialsId: 'github', url: 'https://github.com/Alok018/Jenkins'
          }
       }
-  }
     
     stage('Building image') {
       steps{
