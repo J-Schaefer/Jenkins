@@ -1,19 +1,6 @@
-pipeline {
-  agent { ros_noetic_Dockerfile true }
-  stages {
-    stage("build") {
-      steps {
-        sh """
-          docker build -t ros_noetic_Dockerfile .
-        """
-      }
-    }
-    stage("run") {
-      steps {
-        sh """
-          docker run --rm ros_noetic_Dockerfile
-        """
-      }
-    }
+node{
+  stage ('SCM Checkout'){
+    git 'https://github.com/Alok018/Jenkins'
   }
+
 }
