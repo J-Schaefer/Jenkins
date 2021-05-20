@@ -7,9 +7,11 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git credentialsId: 'github', url: 'https://github.com/Alok018/Jenkins'
+          git credentialsId: 'github', url: 'https://github.com/Alok018/Jenkins'
+         }
       }
-    }
+  }
+    
     stage('Building image') {
       steps{
         script {
