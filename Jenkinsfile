@@ -9,7 +9,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker build -t alok018/jenkins .
+        app = docker.build("aloknath13/jenkins")
     }
      stage ('Email Notification'){
          mail bcc: '', body: 'Thanks', cc: '', from: '', replyTo: '', subject: 'Jenkinsjob Successful', to: 'alok.natheee@gmail.com'
