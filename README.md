@@ -1,1 +1,1 @@
-# Integration of Dockerfile in Jenkinsfile
+# Building Dockerfile using Jenkinsfile
